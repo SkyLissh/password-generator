@@ -19,7 +19,7 @@ export function Options() {
 							{Math.round(length / 5)}
 						</span>
 					</p>
-					<Slider value={length} min={0} max={100} onChange={onChangeLength} />
+					<Slider value={length} onChange={onChangeLength} />
 				</label>
 			</fieldset>
 

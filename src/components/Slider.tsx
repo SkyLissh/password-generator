@@ -1,18 +1,16 @@
 type Props = {
 	value: number;
-	min?: number;
-	max?: number;
 
 	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export function Slider({ value, min, max, onChange }: Props) {
+export function Slider({ value, onChange }: Props) {
 	return (
 		<div className="w-full relative">
 			<input
 				type="range"
-				min={min}
-				max={max}
+				min={0}
+				max={100}
 				value={value}
 				className="w-full cursor-pointer opacity-0 appearance-none"
 				onChange={onChange}

@@ -1,8 +1,8 @@
 export function Password() {
 	return (
-		<form className="bg-zinc-800 p-4 flex justify-between">
+		<form className="bg-zinc-800 p-4 flex justify-between md:px-6 md:py-4">
 			<input
-				className="bg-transparent text-2xl font-bold w-[80%] outline-none placeholder:text-zinc-600 placeholder:font-bold"
+				className="bg-transparent text-2xl md:text-3xl font-bold w-[80%] outline-none placeholder:text-zinc-600 placeholder:font-bold"
 				placeholder="P4$5W0rD!"
 				disabled
 			/>

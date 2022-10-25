@@ -9,6 +9,7 @@ export function Slider({ value, onChange }: Props) {
 		<div className="w-full relative">
 			<input
 				type="range"
+				name="slider"
 				min={0}
 				max={100}
 				value={value}

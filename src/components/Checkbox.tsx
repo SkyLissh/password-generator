@@ -1,16 +1,16 @@
-import { ReactNode, useState } from "react";
-
 type Props = {
 	text?: string;
+	checked?: boolean;
+
+	onClick?: () => void;
 };
 
-export function Checkbox({ text }: Props) {
-	const [checked, setChecked] = useState(false);
+export function Checkbox({ text, checked, onClick }: Props) {
 	const style = checked ? "bg-green-200 outline-green-200" : "outline-zinc-200";
 
 	return (
 		<label className="my-4 flex items-center">
-			<input type="checkbox" className="hidden" onChange={(e) => setChecked(!checked)} />
+			<input type="checkbox" className="hidden" onChange={onClick} />
 			<span
 				className={`${style} outline w-5 h-5 flex items-center justify-center hover:outline-green-200 cursor-pointer`}
 			>

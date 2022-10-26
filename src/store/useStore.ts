@@ -19,19 +19,19 @@ export const useStore = create<StoreState>()(
 	devtools(
 		persist(
 			(set) => ({
-				length: 0,
+				length: 10,
 				setLength: (length: number) => set({ length }),
 
-				uppercase: false,
+				uppercase: true,
 				setUppercase: () => set((state) => ({ uppercase: !state.uppercase })),
 
-				lowercase: false,
+				lowercase: true,
 				setLowercase: () => set((state) => ({ lowercase: !state.lowercase })),
 
-				numbers: false,
+				numbers: true,
 				setNumbers: () => set((state) => ({ numbers: !state.numbers })),
 
-				symbols: false,
+				symbols: true,
 				setSymbols: () => set((state) => ({ symbols: !state.symbols }))
 			}),
 			{
